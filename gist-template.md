@@ -39,12 +39,24 @@ Bracket expressions empower us to outline a collection of characters that necess
 
 ### Character Classes
 
+Character categories establish a spectrum of characters that have the potential to correspond with an individual character within the input text. In our design, [A-Za-z0-9]+ signifies our pursuit of one or more alphanumeric characters. This is employed to identify both the username and domain segments within the email address.
+
 ### The OR Operator
+
+The choice operator | grants us the ability to delineate alternatives. While our pattern doesn't explicitly include the choice operator, the utilization of [A-Za-z0-9] in multiple instances implies the admissibility of an uppercase letter, lowercase letter, or digit as potential matches.
 
 ### Flags
 
+Indicators within regex are employed to alter the behavior of pattern matching. Our pattern doesn't encompass any indicators like case-insensitivity or global matching. Indicators are positioned at the conclusion of a regex, subsequent to the second slash. They define supplementary functionalities or limitations for the regex.
+
 ### Character Escapes
+
+Character interpretations facilitate the identification of characters that possess distinct implications in regex. Our design doesn't involve any character interpretations, such as the employment of \ followed by a character with distinctive significance.
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Jose is a Full Stack Web Developer student at the University of Miami. He currently resides in Miami, FL, where he enjoys pursuing his passion for learning new technologies and developing functional web pages for users.
+
+If you have additional questions, please visit the link below to reach Jose via GitHub.
+
+https://github.com/Jalzu1007
