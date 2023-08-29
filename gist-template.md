@@ -1,16 +1,18 @@
-# Title (replace with your title)
+# Regex Tutorial: Matching an Email
 
-Introductory paragraph (replace this with your text)
+Greetings to this tutorial on regular expressions! In this guide, we will deeply delve into a particular regular expression, elucidating the function and significance of each constituent part. Regular expressions, often referred to as regex, stand as potent instruments for identifying patterns and conducting searches within strings. As you progress through this tutorial, you will gain a lucid comprehension of the regex pattern and its practical applications.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+Within this tutorial, we will investigate a regex pattern tailored for recognizing email addresses. The ensuing regex pattern offers a proficient approach to validate and extract email addresses from textual content.
+
+Pattern: ^([A-Za-z0-9]+)@([A-Za-z0-9]+).com$
 
 ## Table of Contents
 
 - [Anchors](#anchors)
 - [Quantifiers](#quantifiers)
-- [Grouping Constructs](#grouping-constructs)
+- [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
 - [Character Classes](#character-classes)
 - [The OR Operator](#the-or-operator)
