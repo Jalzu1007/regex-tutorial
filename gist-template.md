@@ -23,11 +23,19 @@ Pattern: ^([A-Za-z0-9]+)@([A-Za-z0-9]+).com$
 
 ### Anchors
 
+Referring to this expression, the ^ symbol indicates the initiation of the expression, while the $ symbol signifies its culmination. The ^ anchor establishes the outset of a line, guaranteeing the commencement of the email address at the line's start. Conversely, the $ anchor asserts the terminus of a line, ensuring the closure of the email address at the line's end.
+
 ### Quantifiers
+
+Quantifiers ascertain the frequency of occurrence of a character or a group. In our pattern, the + symbol serves as a quantifier that follows [A-Za-z0-9]. It signifies the presence of "one or more" instances of the preceding character or group. This enables us to identify a sequence of alphanumeric characters within the username and domain.
 
 ### Grouping Constructs
 
+Parentheses () are employed for grouping and capturing purposes. Within our pattern, we incorporate two pairs of parentheses: ([A-Za-z0-9]+) and ([A-Za-z0-9]+). These groupings are utilized for capturing the username and domain constituents of the email address.
+
 ### Bracket Expressions
+
+Bracket expressions empower us to outline a collection of characters that necessitate matching. In our regex pattern, [A-Za-z0-9] represents a bracket expression that corresponds to any uppercase letter, lowercase letter, or digit. This mechanism is employed to match both the username and domain portions of the email address.
 
 ### Character Classes
 
