@@ -23,27 +23,27 @@ Pattern: ^([A-Za-z0-9]+)@([A-Za-z0-9]+).com$
 
 ### Anchors
 
-Referring to this expression, the ^ symbol indicates the initiation of the expression, while the $ symbol signifies its culmination. The ^ anchor establishes the outset of a line, guaranteeing the commencement of the email address at the line's start. Conversely, the $ anchor asserts the terminus of a line, ensuring the closure of the email address at the line's end.
+Referring to this expression, the `^` symbol indicates the initiation of the expression, while the `$` symbol signifies its culmination. The `^` anchor establishes the outset of a line, guaranteeing the commencement of the email address at the line's start. Conversely, the `$` anchor asserts the terminus of a line, ensuring the closure of the email address at the line's end.
 
 ### Quantifiers
 
-Quantifiers ascertain the frequency of occurrence of a character or a group. In our pattern, the + symbol serves as a quantifier that follows [A-Za-z0-9]. It signifies the presence of "one or more" instances of the preceding character or group. This enables us to identify a sequence of alphanumeric characters within the username and domain.
+Quantifiers ascertain the frequency of occurrence of a character or a group. In our pattern, the `+` symbol serves as a quantifier that follows `[A-Za-z0-9]`. It signifies the presence of "one or more" instances of the preceding character or group. This enables us to identify a sequence of alphanumeric characters within the username and domain.
 
 ### Grouping Constructs
 
-Parentheses () are employed for grouping and capturing purposes. Within our pattern, we incorporate two pairs of parentheses: ([A-Za-z0-9]+) and ([A-Za-z0-9]+). These groupings are utilized for capturing the username and domain constituents of the email address.
+Parentheses `()` are employed for grouping and capturing purposes. Within our pattern, we incorporate two pairs of parentheses: `([A-Za-z0-9]+)` and `([A-Za-z0-9]+)`. These groupings are utilized for capturing the username and domain constituents of the email address.
 
 ### Bracket Expressions
 
-Bracket expressions empower us to outline a collection of characters that necessitate matching. In our regex pattern, [A-Za-z0-9] represents a bracket expression that corresponds to any uppercase letter, lowercase letter, or digit. This mechanism is employed to match both the username and domain portions of the email address.
+Bracket expressions empower us to outline a collection of characters that necessitate matching. In our regex pattern, `[A-Za-z0-9]` represents a bracket expression that corresponds to any uppercase letter, lowercase letter, or digit. This mechanism is employed to match both the username and domain portions of the email address.
 
 ### Character Classes
 
-Character categories establish a spectrum of characters that have the potential to correspond with an individual character within the input text. In our design, [A-Za-z0-9]+ signifies our pursuit of one or more alphanumeric characters. This is employed to identify both the username and domain segments within the email address.
+Character categories establish a spectrum of characters that have the potential to correspond with an individual character within the input text. In our design, `[A-Za-z0-9]+` signifies our pursuit of one or more alphanumeric characters. This is employed to identify both the username and domain segments within the email address.
 
 ### The OR Operator
 
-The choice operator | grants us the ability to delineate alternatives. While our pattern doesn't explicitly include the choice operator, the utilization of [A-Za-z0-9] in multiple instances implies the admissibility of an uppercase letter, lowercase letter, or digit as potential matches.
+The choice operator | grants us the ability to delineate alternatives. While our pattern doesn't explicitly include the choice operator, the utilization of `[A-Za-z0-9]` in multiple instances implies the admissibility of an uppercase letter, lowercase letter, or digit as potential matches.
 
 ### Flags
 
@@ -51,7 +51,7 @@ Indicators within regex are employed to alter the behavior of pattern matching. 
 
 ### Character Escapes
 
-Character interpretations facilitate the identification of characters that possess distinct implications in regex. Our design doesn't involve any character interpretations, such as the employment of \ followed by a character with distinctive significance.
+Character interpretations facilitate the identification of characters that possess distinct implications in regex. Our design doesn't involve any character interpretations, such as the employment of `\` followed by a character with distinctive significance.
 
 ## Author
 
